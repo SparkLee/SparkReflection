@@ -27,15 +27,35 @@
       }
     </style>
   </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="left col-md-5">
-          <p class='key'>类名<p>
-          <p class='tip'>两种方法获取：访问公共成员属性name；调用成员方法getName</p>
+  <body style='margin:5px;'>    
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <span>类名</span><span>（<?php echo $class_info['name'] ?>）</span>
+            </a>
+          </h4>
         </div>
-        <div class="col-md-7">
-          <p class='value'><?php echo $class_info['name'] ?></p>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <p>两种方法获取：访问公共成员属性name；调用成员方法getName</p>            
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading2">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapseOne">
+              <span>类的短名</span><span>（<?php echo $class_info['short_name'] ?>）</span>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+          <div class="panel-body">
+            <p>获取类的短名，就是不含命名空间（namespace）的那一部分。</p>            
+          </div>
         </div>
       </div>
     </div>

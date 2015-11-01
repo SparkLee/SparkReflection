@@ -2,6 +2,7 @@
 
 namespace sparklee;
 
+use ReflectionClass;
 /**
  * @author SparkLee <liweijsj@163.com>
  * @since v1.0
