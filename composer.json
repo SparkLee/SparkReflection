@@ -1,0 +1,14 @@
+{
+    "name": "sparklee/spark-reflection",
+    "description": "a simple tool to display class information.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Spark Lee",
+            "email": "liweijsj@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
