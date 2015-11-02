@@ -82,7 +82,7 @@ class SparkReflection {
 		$class_info['doc_comment'] = [
 			'key'         => '类的文档注释',
 			'value'       => $reflection->getDocComment(),
-			'value_str'   => self::toString($reflection->getDocComment()),
+			'value_str'   => mb_substr(self::toString($reflection->getDocComment()), 0, 30, 'UTF-8'),
 			'tip'         => '从一个类中获取文档注释',
 			'call_method' => 'ReflectionClass::getDocComment()',
 		];

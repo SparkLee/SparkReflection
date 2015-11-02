@@ -79,7 +79,7 @@
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1"><?php echo $v['key'] ?>：</div>
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-11"><?php var_dump($v['value']) ?></div>
               </div>
-              <div class="row">
+              <div class="row" style='margin-top: 10px;'>
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1">描述：</div>
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-11"><?php echo $v['tip'] ?></div>
               </div>
