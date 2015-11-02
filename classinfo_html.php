@@ -59,7 +59,7 @@
     <div class="bs-docs-header" id="content" tabindex="-1">
       <div class="container">
         <h1>类（<?php echo $class_info['name']['value'] ?>）的信息</h1>
-        <p>使用PHP反射类ReflectionClass获取</p>
+        <p>使用PHP反射类ReflectionClass获取(@author: SparkLee &lt;liweijsj@163.com&gt;)</p>
       </div>
     </div>
 
