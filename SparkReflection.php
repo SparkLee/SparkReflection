@@ -87,9 +87,9 @@ class SparkReflection {
 			'call_method' => 'ReflectionClass::getDocComment()',
 		];
 
-		// 类的首行等号
+		// 类的首行行号
 		$class_info['start_line'] = [
-			'key'         => '类的首行等号',
+			'key'         => '类的首行行号',
 			'value'       => $reflection->getStartLine(),
 			'value_str'   => self::toString($reflection->getStartLine()),
 			'tip'         => '从用户定义的类获取其第一行的行数',
@@ -353,7 +353,7 @@ class SparkReflection {
 	}
 
 	private static function toString($obj) {
-		if (is_string($obj)) {
+		if (is_string($obj) || is_numeric($obj)) {
 			return $obj;
 		} elseif(is_array($obj)) {
 			return 'Array';
