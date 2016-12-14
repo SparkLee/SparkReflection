@@ -1,6 +1,6 @@
 <?php
 
-namespace sparklee;
+namespace Sparklee\SparkReflection;
 
 use ReflectionClass;
 
