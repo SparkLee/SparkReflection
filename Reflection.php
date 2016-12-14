@@ -9,7 +9,7 @@ use ReflectionClass;
  * @since v1.0
  * @see http://php.net/manual/zh/class.reflectionclass.php
  */
-class SparkReflection {
+class Reflection {
 	public static function getClassInfo($class_name) {
 		$reflection = new ReflectionClass($class_name);
 
